@@ -1,0 +1,38 @@
+/* card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(192, 133, 78, 0.2); /* horizontal offset, vertical offset, blur, spread, colors */
+  border-radius: 5px;
+}
+
+.card-body {
+  margin: 10px;
+  padding: 10px;
+}
+
+/* input */
+.keyword {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(151, 55, 55, 0.747);
+}
+
+input:focus {
+  outline: none;
+}
+
+/* text  */
+
+p {
+  width: 100%;
+}
+
+code {
+  display: block;
+  /* width: 100%; */
+  border-radius: 2px;
+  color: #fff;
+  background-color: grey;
+  padding: 10px;
+  margin: 0 10px, 10px 0;
+}

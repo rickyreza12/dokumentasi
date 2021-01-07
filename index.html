@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main/css/style.css" />
+    <link rel="stylesheet" href="main/css/component.css" />
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+        <div class="tab">
+            <button class="tabklik" onclick="openDoc(event, 'Flutter')">
+              Flutter
+            </button>
+            <button class="tabklik" onclick="openDoc(event, 'Javascript')">
+              Javascript
+            </button>
+            <button class="tabklik" onclick="openDoc(event, 'Laravel')">
+              Laravel
+            </button>
+            <button id="defaultOpen" class="tabklik" onclick="openDoc(event, 'VisualStudio')">
+              Visual Studio
+            </button>
+            <button class="tabklik" onclick="openDoc(event, 'Vuejs')">
+              Vue js
+            </button>
+        </div>
+      <div id="Flutter" class="tabcontent">
+        <h2>Flutter Documentation</h2>
+      </div>
+      <div id="Javascript" class="tabcontent">
+        <h2>Javascript Documentations</h2>
+      </div>
+      <div id="Laravel" class="tabcontent">
+        <h2>Laravel Documentation</h2>
+      </div>
+      <div id="VisualStudio" class="tabcontent">
+        <h2>Visual Studio</h2>
+        <input class="keyword" placeholder="search keyword"></input>
+        <div class="range"></div>
+        <div class="card">
+            <div class="card-body">
+                <h3>Open Folder</h3>
+                <p>Open Folder default value(will be making open new window)</p>
+                <code>code .</code>
+                <p>But, if you want intenttionally to open new window you can use this</p>
+                <code>code -n (project folder)</code>
+                <p>Open Folder inside vscode without making new window</p>
+                <code>code -r .</code>
+                <p>it's for opening project inside folder</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3>How to</h3>
+                <p>solved</p>
+            </div>
+        </div>
+      </div>
+      <div id="Vuejs" class="tabcontent">
+        <h2>Vue js</h2>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="main/script.js"></script>
+</html>
