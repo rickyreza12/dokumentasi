@@ -1,5 +1,8 @@
 /* card */
 .card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vh;
   box-shadow: 0 4px 8px 0 rgba(192, 133, 78, 0.2); /* horizontal offset, vertical offset, blur, spread, colors */
   border-radius: 5px;
 }
