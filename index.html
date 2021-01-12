@@ -10,7 +10,7 @@
   <body>
     <main>
         <div class="tab">
-            <button class="tabklik" onclick="openDoc(event, 'Flutter')">
+            <button id="defaultOpen" class="tabklik" onclick="openDoc(event, 'Flutter')">
               Flutter
             </button>
             <button class="tabklik" onclick="openDoc(event, 'Javascript')">
@@ -22,7 +22,7 @@
             <button  class="tabklik" onclick="openDoc(event, 'VisualStudio')">
               Visual Studio
             </button>
-            <button id="defaultOpen" class="tabklik" onclick="openDoc(event, 'Vuejs')">
+            <button class="tabklik" onclick="openDoc(event, 'Vuejs')">
               Vue js
             </button>
             <a href="another.html">
@@ -31,9 +31,37 @@
         </div>
       <div id="Flutter" class="tabcontent">
         <h1>Flutter Documentation</h1>
+        <div class="range"></div>
+        <input class="keyword" placeholder="search keyword"></input>
+        <div class="range"></div>
+         <div class="card">
+            <div class="card-body">
+              <h3>Connecting to Device using wifi</h3>
+              <p>Make sure has the same ip router,</p>
+              <p>Connect device into laptop or computer using usb cable and then type command line</p>
+              <code>adb tcpip 5555</code>
+              <p>After that connect device ip using this command line</p>
+              <code>adb connect (device-ip)</code>
+            </div>
+          </div>
       </div>
       <div id="Javascript" class="tabcontent">
         <h1>Javascript Documentations</h1>
+        <div class="range"></div>
+        <input class="keyword" placeholder="search keyword"></input>
+        <div class="range"></div>
+        <div class="container-center">
+          <div class="card">
+            <div class="card-body">
+              <h3>Object Assign</h3>
+              <p>Object assign is method that copied all 
+                value inside object (including property and value) 
+                from the source object into target object</p>
+              <code>Object.assign(target, source)</code>
+              <p>For more aboute object.assign and more example <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable">click here</a></p>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="Laravel" class="tabcontent">
         <h1>Laravel Documentation</h1>
