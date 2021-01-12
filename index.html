@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="main/css/component.css" />
   </head>
   <body>
-    <header>
-    </header>
     <main>
         <div class="tab">
             <button class="tabklik" onclick="openDoc(event, 'Flutter')">
@@ -21,12 +19,15 @@
             <button class="tabklik" onclick="openDoc(event, 'Laravel')">
               Laravel
             </button>
-            <button id="defaultOpen" class="tabklik" onclick="openDoc(event, 'VisualStudio')">
+            <button  class="tabklik" onclick="openDoc(event, 'VisualStudio')">
               Visual Studio
             </button>
-            <button class="tabklik" onclick="openDoc(event, 'Vuejs')">
+            <button id="defaultOpen" class="tabklik" onclick="openDoc(event, 'Vuejs')">
               Vue js
             </button>
+            <a href="another.html">
+                <button>Another html</button>
+            </a>
         </div>
       <div id="Flutter" class="tabcontent">
         <h1>Flutter Documentation</h1>
@@ -65,6 +66,36 @@
       </div>
       <div id="Vuejs" class="tabcontent">
         <h1>Vue js</h1>
+        <div class="range"></div>
+        <input class="keyword" placeholder="search keyword"></input>
+        <div class="range"></div>
+        <div class="card">
+          <div class="card-body">
+            <h3>The difference Between Method and Computed</h3>
+            <p>Method will be change the value everytime the state change while computed will change when the value inside property changed</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3>Short Hand for Vue Custom Derrivative</h3>
+            <p>Shortcute using <b>V-bind</b> such as <b>v-bind:key</b></p>
+            <p>Example:</p>
+            <code>:key</code>
+            <div class="range"></div>
+            <p>Shortcute using <b>v-on</b> such as <b>v-on:submit</b></p>
+            <p>Example:</p>
+            <code>@submit, @keydown</code>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3>V-model</h3>
+            <p>V model is making u can change the value into state quickly</p>
+            <div class="center-text">
+              <img src="main/assets/v-model.gif" alt="" height="300px">
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer></footer>

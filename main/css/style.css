@@ -8,6 +8,8 @@
   background-color: #fcffe1;
   width: 15%;
   height: 100vh;
+  box-shadow: 3px 2px rgba(0, 0, 0, 0.1);
+
   /* border: 2px solid #000000; */
 }
 
@@ -47,4 +49,8 @@
 /* range for keyword and card */
 .range {
   margin: 50px;
+}
+
+a {
+  text-decoration: none;
 }
