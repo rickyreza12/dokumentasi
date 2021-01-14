@@ -9,56 +9,148 @@
   </head>
   <body>
     <main>
-        <div class="tab">
-            <button id="defaultOpen" class="tabklik" onclick="openDoc(event, 'Flutter')">
-              Flutter
-            </button>
-            <button class="tabklik" onclick="openDoc(event, 'Javascript')">
-              Javascript
-            </button>
-            <button class="tabklik" onclick="openDoc(event, 'Laravel')">
-              Laravel
-            </button>
-            <button  class="tabklik" onclick="openDoc(event, 'VisualStudio')">
-              Visual Studio
-            </button>
-            <button class="tabklik" onclick="openDoc(event, 'Vuejs')">
-              Vue js
-            </button>
-            <a href="another.html">
-                <button>Another html</button>
-            </a>
-        </div>
+      <div class="tab">
+        <button class="tabklik" onclick="openDoc(event, 'Flutter')">
+          Flutter
+        </button>
+        <button class="tabklik" onclick="openDoc(event, 'Javascript')">
+          Javascript
+        </button>
+        <button
+          id="defaultOpen"
+          class="tabklik"
+          onclick="openDoc(event, 'html')"
+        >
+          HTML
+        </button>
+        <button class="tabklik" onclick="openDoc(event, 'Laravel')">
+          Laravel
+        </button>
+        <button class="tabklik" onclick="openDoc(event, 'VisualStudio')">
+          Visual Studio
+        </button>
+        <button class="tabklik" onclick="openDoc(event, 'Vuejs')">
+          Vue js
+        </button>
+        <a href="another.html">
+          <button>Another html</button>
+        </a>
+      </div>
       <div id="Flutter" class="tabcontent">
         <h1>Flutter Documentation</h1>
         <div class="range"></div>
-        <input class="keyword" placeholder="search keyword"></input>
+        <input class="keyword" placeholder="search keyword" />
         <div class="range"></div>
-         <div class="card">
-            <div class="card-body">
-              <h3>Connecting to Device using wifi</h3>
-              <p>Make sure has the same ip router,</p>
-              <p>Connect device into laptop or computer using usb cable and then type command line</p>
-              <code>adb tcpip 5555</code>
-              <p>After that connect device ip using this command line</p>
-              <code>adb connect (device-ip)</code>
-            </div>
+        <div class="card">
+          <div class="card-body">
+            <h3>Connecting to Device using wifi</h3>
+            <p>Make sure has the same ip router,</p>
+            <p>
+              Connect device into laptop or computer using usb cable and then
+              type command line
+            </p>
+            <code>adb tcpip 5555</code>
+            <p>After that connect device ip using this command line</p>
+            <code>adb connect (device-ip)</code>
           </div>
+        </div>
       </div>
       <div id="Javascript" class="tabcontent">
         <h1>Javascript Documentations</h1>
         <div class="range"></div>
-        <input class="keyword" placeholder="search keyword"></input>
+        <input class="keyword" placeholder="search keyword" />
         <div class="range"></div>
         <div class="container-center">
           <div class="card">
             <div class="card-body">
               <h3>Object Assign</h3>
-              <p>Object assign is method that copied all 
-                value inside object (including property and value) 
-                from the source object into target object</p>
+              <p>
+                Object assign is method that copied all value inside object
+                (including property and value) from the source object into
+                target object
+              </p>
               <code>Object.assign(target, source)</code>
-              <p>For more aboute object.assign and more example <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable">click here</a></p>
+              <p>
+                For more aboute object.assign and more example
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable"
+                  >click here</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="html" class="tabcontent">
+        <h1>HTML Documentations</h1>
+        <div class="range"></div>
+        <input class="keyword" placeholder="search keyword" />
+        <div class="range"></div>
+        <div class="container-center">
+          <div class="card">
+            <div class="card-body">
+              <h3>Field Set</h3>
+              <p>
+                Mostly we like to grouping the value or the radio button or any
+                others elemnt when it comes to form, we can use fieldset
+              </p>
+              <p>Example</p>
+              <code>
+                <pre>
+                &lt;fieldset&gt;
+                 &lt;legend&gt;What level ninja are you?&lt;/legend&gt;
+                  &lt;input
+                    id="newbie"
+                    type="radio"
+                    name="levels"
+                    value="newbie"
+                  /&gt;
+                  &lt;label for="newbie"&gt;Newbie Kitten&lt;/label&gt;&lt;br /&gt;
+                  &lt;input
+                    id="intermediate"
+                    type="radio"
+                    name="levels"
+                    value="intermediate"
+                  /&gt;
+                  &lt;label for="intermediate"&gt;Developing Student&lt;/label&gt;&lt;br /&gt;
+                  &lt;input
+                    id="master"
+                    type="radio"
+                    name="levels"
+                    value="master"
+                  /&gt;
+                  &lt;label for="master"&gt;Master&lt;/label&gt;
+                &lt;/fieldset&gt;
+              </pre
+                >
+              </code>
+              <p>Result</p>
+              <div style="background-color: #007fff; padding: 50px">
+                <fieldset>
+                  <legend>What level ninja are you?</legend>
+                  <input
+                    id="newbie"
+                    type="radio"
+                    name="levels"
+                    value="newbie"
+                  />
+                  <label for="newbie">Newbie Kitten</label><br />
+                  <input
+                    id="intermediate"
+                    type="radio"
+                    name="levels"
+                    value="intermediate"
+                  />
+                  <label for="intermediate">Developing Student</label><br />
+                  <input
+                    id="master"
+                    type="radio"
+                    name="levels"
+                    value="master"
+                  />
+                  <label for="master">Master</label>
+                </fieldset>
+              </div>
             </div>
           </div>
         </div>
@@ -69,33 +161,36 @@
       <div id="VisualStudio" class="tabcontent">
         <h1>Visual Studio</h1>
         <div class="range"></div>
-        <input class="keyword" placeholder="search keyword"></input>
+        <input class="keyword" placeholder="search keyword" />
         <div class="range"></div>
         <div class="container-center">
-            <div class="card">
-                <div class="card-body">
-                    <h3>Open Folder</h3>
-                    <p>Open Folder default value(will be making open new window)</p>
-                    <code>code .</code>
-                    <p>But, if you want intenttionally to open new window you can use this</p>
-                    <code>code -n (project folder)</code>
-                    <p>Open Folder inside vscode without making new window</p>
-                    <code>code -r .</code>
-                    <p>it's for opening project inside folder</p>
-                </div>
+          <div class="card">
+            <div class="card-body">
+              <h3>Open Folder</h3>
+              <p>Open Folder default value(will be making open new window)</p>
+              <code>code .</code>
+              <p>
+                But, if you want intenttionally to open new window you can use
+                this
+              </p>
+              <code>code -n (project folder)</code>
+              <p>Open Folder inside vscode without making new window</p>
+              <code>code -r .</code>
+              <p>it's for opening project inside folder</p>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h3>How to</h3>
-                    <p>solved</p>
-                </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3>How to</h3>
+              <p>solved</p>
             </div>
+          </div>
         </div>
       </div>
       <div id="Vuejs" class="tabcontent">
         <h1>Vue js</h1>
         <div class="range"></div>
-        <input class="keyword" placeholder="search keyword"></input>
+        <input class="keyword" placeholder="search keyword" />
         <div class="range"></div>
         <div class="card">
           <div class="card-body">
@@ -107,14 +202,20 @@
         <div class="card">
           <div class="card-body">
             <h3>Install Bootstrap on Vue</h3>
-            <p>If you want to change the display of the vue using bootstrap u can use this</p>
+            <p>
+              If you want to change the display of the vue using bootstrap u can
+              use this
+            </p>
             <code>npm install bootstrap jquery popper.js</code>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <h3>The difference Between Method and Computed</h3>
-            <p>Method will be change the value everytime the state change while computed will change when the value inside property changed</p>
+            <p>
+              Method will be change the value everytime the state change while
+              computed will change when the value inside property changed
+            </p>
           </div>
         </div>
         <div class="card">
@@ -134,7 +235,7 @@
             <h3>V-model</h3>
             <p>V model is making u can change the value into state quickly</p>
             <div class="center-text">
-              <img src="main/assets/v-model.gif" alt="" height="300px">
+              <img src="main/assets/v-model.gif" alt="" height="300px" />
             </div>
           </div>
         </div>
