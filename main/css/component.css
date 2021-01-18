@@ -44,3 +44,12 @@ code {
 .center-text {
   text-align: center;
 }
+
+/* button  */
+.tabklik{
+  color: aquamarine;
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: bold;
+  margin: 20px;
+}

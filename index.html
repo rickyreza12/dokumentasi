@@ -10,18 +10,24 @@
   <body>
     <main>
       <div class="tab">
-        <button class="tabklik" onclick="openDoc(event, 'Flutter')">
+        <button  class="tabklik" onclick="openDoc(event, 'Flutter')">
           Flutter
         </button>
         <button class="tabklik" onclick="openDoc(event, 'Javascript')">
           Javascript
         </button>
         <button
-          id="defaultOpen"
           class="tabklik"
           onclick="openDoc(event, 'html')"
         >
           HTML
+        </button>
+        <button
+          class="tabklik"
+          id="defaultOpen"
+          onclick="openDoc(event, '.NET')"
+        >
+          Asp .Net
         </button>
         <button class="tabklik" onclick="openDoc(event, 'Laravel')">
           Laravel
@@ -52,6 +58,16 @@
             <code>adb tcpip 5555</code>
             <p>After that connect device ip using this command line</p>
             <code>adb connect (device-ip)</code>
+          </div>
+        </div>
+      </div>
+      <div id=".NET" class="tabcontent">
+        <h1>ASP .NET Documentation</h1>
+        <div class="range"></div>
+        <input class="keyword" placeholder="search keyword" />
+        <div class="range"></div>
+        <div class="card">
+          <div class="card-body">
           </div>
         </div>
       </div>
