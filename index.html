@@ -68,6 +68,31 @@
         <div class="range"></div>
         <div class="card">
           <div class="card-body">
+            <h1>Switching beetwen dotnet sdk</h1>
+            <p>For the most part when the --version of dotnet is not compatible we can list the sdk first or checking the version first</p>
+            <code>dotnet --version</code>
+            After that we can list the sdk
+            <code>dotnet --list-sdks</code>
+            The we can make dotnet global json and put  inside it
+            <code>dotnet new globaljson</code>
+            <pre>
+              <code>
+{
+"sdk": {
+"version": "3.0.100-preview3-010431" //thhis is the current version
+  }
+}
+              </code>
+            </pre>
+            <p>the u can change into the list from version that you want let's say it's version 2</p>
+            <pre><code>
+  {
+    "sdk": {
+    "version": "version": "2.2.101" //thhis is the current version
+      }
+    }
+            </code></pre>
+            <p>when you tried to check using <strong>dotnet --version</strong> you can see the vesion is changing</p>
           </div>
         </div>
       </div>
