@@ -10,23 +10,18 @@
   <body>
     <main>
       <div class="tab">
-        <button  class="tabklik" onclick="openDoc(event, 'Flutter')">
+        <button class="tabklik" onclick="openDoc(event, 'Flutter')">
           Flutter
-        </button>
-        <button class="tabklik" onclick="openDoc(event, 'Javascript')">
-          Javascript
-        </button>
-        <button
-          class="tabklik"
-          onclick="openDoc(event, 'html')"
-        >
-          HTML
         </button>
         <button
           class="tabklik"
           id="defaultOpen"
-          onclick="openDoc(event, '.NET')"
+          onclick="openDoc(event, 'Javascript')"
         >
+          Javascript
+        </button>
+        <button class="tabklik" onclick="openDoc(event, 'html')">HTML</button>
+        <button class="tabklik" onclick="openDoc(event, '.NET')">
           Asp .Net
         </button>
         <button class="tabklik" onclick="openDoc(event, 'Laravel')">
@@ -69,11 +64,14 @@
         <div class="card">
           <div class="card-body">
             <h1>Switching beetwen dotnet sdk</h1>
-            <p>For the most part when the --version of dotnet is not compatible we can list the sdk first or checking the version first</p>
+            <p>
+              For the most part when the --version of dotnet is not compatible
+              we can list the sdk first or checking the version first
+            </p>
             <code>dotnet --version</code>
             After that we can list the sdk
             <code>dotnet --list-sdks</code>
-            The we can make dotnet global json and put  inside it
+            The we can make dotnet global json and put inside it
             <code>dotnet new globaljson</code>
             <pre>
               <code>
@@ -84,7 +82,10 @@
 }
               </code>
             </pre>
-            <p>the u can change into the list from version that you want let's say it's version 2</p>
+            <p>
+              the u can change into the list from version that you want let's
+              say it's version 2
+            </p>
             <pre><code>
   {
     "sdk": {
@@ -92,7 +93,11 @@
       }
     }
             </code></pre>
-            <p>when you tried to check using <strong>dotnet --version</strong> you can see the vesion is changing</p>
+            <p>
+              when you tried to check using
+              <strong>dotnet --version</strong> you can see the vesion is
+              changing
+            </p>
           </div>
         </div>
       </div>
@@ -102,6 +107,55 @@
         <input class="keyword" placeholder="search keyword" />
         <div class="range"></div>
         <div class="container-center">
+          <div class="card">
+            <div class="card-body">
+              <h3>Javascript Backslash</h3>
+              <p>
+                There are so many backslash in javascript so we can use it in
+                here bellow
+              </p>
+              <table>
+                <thead>
+                  <th>Code</th>
+                  <th>Output</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>\'</td>
+                    <td>Single quote</td>
+                  </tr>
+                  <tr>
+                    <td>\"</td>
+                    <td>Double quote</td>
+                  </tr>
+                  <tr>
+                    <td>\\</td>
+                    <td>backslash</td>
+                  </tr>
+                  <tr>
+                    <td>\n</td>
+                    <td>newline</td>
+                  </tr>
+                  <tr>
+                    <td>\n</td>
+                    <td>carriage return</td>
+                  </tr>
+                  <tr>
+                    <td>\t</td>
+                    <td>tab</td>
+                  </tr>
+                  <tr>
+                    <td>\b</td>
+                    <td>word boundary</td>
+                  </tr>
+                  <tr>
+                    <td>\f</td>
+                    <td>from feed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
           <div class="card">
             <div class="card-body">
               <h3>Object Assign</h3>
