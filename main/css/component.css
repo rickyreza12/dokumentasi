@@ -91,3 +91,19 @@ tr:hover {
   background-color: #434a94;
   color: white;
 }
+
+/* class */
+.block {
+  background-color: #434a94;
+  background: linear-gradient(to right, #2f829b, #434a94);
+  width: 100%;
+}
+
+.codes {
+  color: white;
+  padding: 20px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+}
