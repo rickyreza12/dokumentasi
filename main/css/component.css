@@ -1,3 +1,14 @@
+/* id  */
+#related-documentations code {
+  display: block;
+  /* width: 100%; */
+  border-radius: 2px;
+  color: #fff;
+  background-color: grey;
+  padding: 10px;
+  margin: 0 10px, 10px 0;
+}
+
 /* card */
 .card {
   margin-left: auto;
@@ -28,16 +39,6 @@ input:focus {
 
 p {
   width: 100%;
-}
-
-code {
-  display: block;
-  /* width: 100%; */
-  border-radius: 2px;
-  color: #fff;
-  background-color: grey;
-  padding: 10px;
-  margin: 0 10px, 10px 0;
 }
 
 /* center component  */

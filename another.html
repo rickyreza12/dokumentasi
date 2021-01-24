@@ -3,10 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Document Kerjaan</title>
+    <link rel="stylesheet" href="/main/css/style.css" />
+    <link rel="stylesheet" href="/main/css/component.css" />
   </head>
   <body>
-    <a href="index.html"><- back</a>
-    blank
+    <nav id="navbar">
+      <a href="index.html"><- back</a>
+      <header>Datacenter Documentations</header>
+      <ul>
+        <li>
+          <a
+            class="nav-link"
+            href="#local_host_starting_up_indiferrent_locations"
+          ></a>
+          Local Host Starting Up In Different Locations
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            href="#local_host_starting_up_indiferrent_locations"
+          ></a>
+          Local Host Starting Up In Different Locations
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section
+        class="main-sections"
+        id="local_host_starting_up_indiferrent_locations"
+      >
+        <header>Local Host Starting Up In Different Locations</header>
+        <article>
+          <p>
+            When you tried to run using xampp and you found something like this
+          </p>
+          <img src="/main/assets/auto-redirect.png" alt="" />
+          <p>
+            Which mean u will be auto redirect to this url every time you open
+            local host with the port provided by apache. The solutions is you
+            should chang it on xampp apache <strong>httpd.conf</strong>, it's
+            located on <strong>C:\xampp\apache\conf</strong> then click
+            httpd.conf and search document root.
+          </p>
+          <img src="/main/assets/document-root.png" alt="" />
+          <p>and change it like this</p>
+          <img src="/main/assets/auto-redirect_solved.png" alt="" />
+          <p>
+            Don't forget to restart apache xampp before tried to call localhost
+            8081 again
+          </p>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
