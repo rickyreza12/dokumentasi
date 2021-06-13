@@ -190,7 +190,7 @@ tr:nth-child(even) {
   }
 
   main {
-    margin: 0;
+    margin-left: 0px;
   }
 }
 
