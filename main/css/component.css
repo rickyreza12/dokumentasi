@@ -1,110 +1,48 @@
-/* id  */
-#related-documentations code {
-  display: block;
-  /* width: 100%; */
-  border-radius: 2px;
-  color: #fff;
-  background-color: grey;
-  padding: 10px;
-  margin: 0 10px, 10px 0;
+:root {
+  font-size: 16px;
+  --transition-speed: 600ms;
 }
 
-/* card */
 .card {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100vh;
-  box-shadow: 0 4px 8px 0 rgba(192, 133, 78, 0.2); /* horizontal offset, vertical offset, blur, spread, colors */
-  border-radius: 5px;
+  width: 80%;
+  margin-top: 20px;
+  box-shadow: 0px 4px 8px 0 #a5dee5;
 }
 
 .card-body {
-  margin: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
-/* input */
 .keyword {
-  padding: 10px;
-  width: 100%;
-  border-radius: 10px;
-  border: 2px solid rgba(151, 55, 55, 0.747);
-}
-
-input:focus {
+  padding: 20px;
+  display: inline-block;
+  margin: 0;
+  opacity: 0.5;
+  font-size: 20px;
+  border: none;
+  border-bottom: px solid;
   outline: none;
 }
 
-/* text  */
-
-p {
-  width: 100%;
+.keyword:hover {
+  opacity: 1;
+  border-bottom: 1px solid;
+  border-color: #a5dee5;
+  width: 80%;
 }
 
-/* center component  */
-.center-text {
-  text-align: center;
+.responsive-table {
+  overflow: auto;
+}
+.responsive-table::-webkit-scrollbar {
+  width: 1rem;
 }
 
-/* button  */
-.tabklik {
-  color: aquamarine;
-  font-size: 16px;
-  font-family: monospace;
-  font-weight: bold;
-  margin: 20px;
+@media only screen and (max-width: 600px) {
+  .card {
+    margin-left: 0rem;
+    width: 100%;
+  }
 }
-
-/* table  */
-
-table,
-th,
-td {
-  border: 0.1px solid white;
-  border-collapse: collapse;
-}
-
-table {
-  margin: auto;
-  width: 100%;
-  text-align: center;
-}
-
-thead {
-  background: linear-gradient(to right, #e66465, #9198e5);
-}
-
-th {
-  padding: 20px;
-}
-
-td {
-  padding: 10px;
-  font-size: 15px;
-  font-weight: 450;
-}
-
-tr:nth-child(even) {
-  background-color: #9198e5;
-}
-
-tr:hover {
-  background-color: #434a94;
-  color: white;
-}
-
-/* class */
-.block {
-  background-color: #434a94;
-  background: linear-gradient(to right, #2f829b, #434a94);
-  width: 100%;
-}
-
-.codes {
-  color: white;
-  padding: 20px;
-  font-family: monospace;
-  font-weight: bold;
-  font-size: 18px;
-  width: 100%;
+@media only screen and (min-width: 600px) {
 }

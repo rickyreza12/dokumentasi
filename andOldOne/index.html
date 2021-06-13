@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentasi Biasa</title>
+    <link rel="stylesheet" href="main/css/style.css" />
+    <link rel="stylesheet" href="main/css/component.css" />
+  </head>
+  <body>
+    <main>
+      <div id="navbar" class="tab">
+        <button class="tabklik" onclick="openDoc(event, 'Flutter')">
+          Flutter
+        </button>
+        <button
+          class="tabklik"
+          id="defaultOpen"
+          onclick="openDoc(event, 'Javascript')"
+        >
+          Javascript
+        </button>
+        <button class="tabklik" onclick="openDoc(event, 'html')">HTML</button>
+        <button class="tabklik" onclick="openDoc(event, '.NET')">
+          Asp .Net
+        </button>
+        <button class="tabklik" onclick="openDoc(event, 'Laravel')">
+          Laravel
+        </button>
+        <button class="tabklik" onclick="openDoc(event, 'VisualStudio')">
+          Visual Studio
+        </button>
+        <button class="tabklik" onclick="openDoc(event, 'Vuejs')">
+          Vue js
+        </button>
+        <a href="another.html">
+          <button>Another html</button>
+        </a>
+      </div>
+      <div id="Flutter" class="tabcontent">
+        <h1>Flutter Documentation</h1>
+        <div class="range"></div>
+        <input class="keyword" placeholder="search keyword" />
+        <div class="range"></div>
+        <div class="card">
+          <div class="card-body">
+            <h3>Connecting to Device using wifi</h3>
+            <p>Make sure has the same ip router,</p>
+            <p>
+              Connect device into laptop or computer using usb cable and then
+              type command line
+            </p>
+            <code>adb tcpip 5555</code>
+            <p>After that connect device ip using this command line</p>
+            <code>adb connect (device-ip)</code>
+          </div>
+        </div>
+      </div>
+      <div id=".NET" class="tabcontent">
+        <h1>ASP .NET Documentation</h1>
+        <div class="range"></div>
+        <input class="keyword" placeholder="search keyword" />
+        <div class="range"></div>
+        <div class="card">
+          <div class="card-body">
+            <h1>More learning Path for .net</h1>
+            <p>
+              More Learning Path in .Net
+              <a
+                href="https://docs.microsoft.com/en-us/learn/browse/?products=dotnet"
+              >
+                Microsoft Learning Path</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h1>Switching beetwen dotnet sdk</h1>
+            <p>
+              For the most part when the --version of dotnet is not compatible
+              we can list the sdk first or checking the version first
+            </p>
+            <code>dotnet --version</code>
+            After that we can list the sdk
+            <code>dotnet --list-sdks</code>
+            The we can make dotnet global json and put inside it
+            <code>dotnet new globaljson</code>
+            <pre>
+              <code>
+{
+"sdk": {
+"version": "3.0.100-preview3-010431" //thhis is the current version
+  }
+}
+              </code>
+            </pre>
+            <p>
+              the u can change into the list from version that you want let's
+              say it's version 2
+            </p>
+            <pre><code>
+  {
+    "sdk": {
+    "version": "version": "2.2.101" //thhis is the current version
+      }
+    }
+            </code></pre>
+            <p>
+              when you tried to check using
+              <strong>dotnet --version</strong> you can see the vesion is
+              changing
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="Javascript" class="tabcontent">
+        <h1>Javascript Documentations</h1>
+        <div class="range"></div>
+        <input class="keyword" placeholder="search keyword" />
+        <div class="range"></div>
+        <div class="container-center">
+          <div class="card">
+            <div class="card-body">
+              <h3>Javascript Backslash</h3>
+              <p>The difference beetween push, pop, shift and unshift,</p>
+              <p>Let's say we have an array like this:</p>
+              <div class="block">
+                <p class="codes">myArray = [1 , 2 , 3 , 4 , 5];</p>
+              </div>
+              <table>
+                <thead>
+                  <th>Functions</th>
+                  <th>Descriptions</th>
+                  <th>Result</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>shift()</td>
+                    <td>Delete value at the beginning of array</td>
+                    <td>[2, 3, 4, 5]</td>
+                  </tr>
+                  <tr>
+                    <td>unshift(value)</td>
+                    <td>Input value at the beginning of array</td>
+                    <td>[value, 1, 2, 3, 4, 5]</td>
+                  </tr>
+                  <tr>
+                    <td>push(value)</td>
+                    <td>Insert value at the end of array</td>
+                    <td>[1, 2, 3, 4, 5, value]</td>
+                  </tr>
+                  <tr>
+                    <td>pop()</td>
+                    <td>Delete value at the end of array</td>
+                    <td>[1, 2, 3, 4]</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3>Javascript Backslash</h3>
+              <p>
+                There are so many backslash in javascript so we can use it in
+                here bellow
+              </p>
+              <table>
+                <thead>
+                  <th>Code</th>
+                  <th>Output</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>\'</td>
+                    <td>Single quote</td>
+                  </tr>
+                  <tr>
+                    <td>\"</td>
+                    <td>Double quote</td>
+                  </tr>
+                  <tr>
+                    <td>\\</td>
+                    <td>backslash</td>
+                  </tr>
+                  <tr>
+                    <td>\n</td>
+                    <td>newline</td>
+                  </tr>
+                  <tr>
+                    <td>\n</td>
+                    <td>carriage return</td>
+                  </tr>
+                  <tr>
+                    <td>\t</td>
+                    <td>tab</td>
+                  </tr>
+                  <tr>
+                    <td>\b</td>
+                    <td>word boundary</td>
+                  </tr>
+                  <tr>
+                    <td>\f</td>
+                    <td>from feed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3>Object Assign</h3>
+              <p>
+                Object assign is method that copied all value inside object
+                (including property and value) from the source object into
+                target object
+              </p>
+              <code>Object.assign(target, source)</code>
+              <p>
+                For more aboute object.assign and more example
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable"
+                  >click here</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="html" class="tabcontent">
+        <h1>HTML Documentations</h1>
+        <div class="range"></div>
+        <input class="keyword" placeholder="search keyword" />
+        <div class="range"></div>
+        <div class="container-center">
+          <div class="card">
+            <div class="card-body">
+              <h3>Field Set</h3>
+              <p>
+                Mostly we like to grouping the value or the radio button or any
+                others elemnt when it comes to form, we can use fieldset
+              </p>
+              <p>Example</p>
+              <code>
+                <pre>
+                &lt;fieldset&gt;
+                 &lt;legend&gt;What level ninja are you?&lt;/legend&gt;
+                  &lt;input
+                    id="newbie"
+                    type="radio"
+                    name="levels"
+                    value="newbie"
+                  /&gt;
+                  &lt;label for="newbie"&gt;Newbie Kitten&lt;/label&gt;&lt;br /&gt;
+                  &lt;input
+                    id="intermediate"
+                    type="radio"
+                    name="levels"
+                    value="intermediate"
+                  /&gt;
+                  &lt;label for="intermediate"&gt;Developing Student&lt;/label&gt;&lt;br /&gt;
+                  &lt;input
+                    id="master"
+                    type="radio"
+                    name="levels"
+                    value="master"
+                  /&gt;
+                  &lt;label for="master"&gt;Master&lt;/label&gt;
+                &lt;/fieldset&gt;
+              </pre
+                >
+              </code>
+              <p>Result</p>
+              <div style="background-color: #007fff; padding: 50px">
+                <fieldset>
+                  <legend>What level ninja are you?</legend>
+                  <input
+                    id="newbie"
+                    type="radio"
+                    name="levels"
+                    value="newbie"
+                  />
+                  <label for="newbie">Newbie Kitten</label><br />
+                  <input
+                    id="intermediate"
+                    type="radio"
+                    name="levels"
+                    value="intermediate"
+                  />
+                  <label for="intermediate">Developing Student</label><br />
+                  <input
+                    id="master"
+                    type="radio"
+                    name="levels"
+                    value="master"
+                  />
+                  <label for="master">Master</label>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Laravel" class="tabcontent">
+        <h1>Laravel Documentation</h1>
+      </div>
+      <div id="VisualStudio" class="tabcontent">
+        <h1>Visual Studio</h1>
+        <div class="range"></div>
+        <input class="keyword" placeholder="search keyword" />
+        <div class="range"></div>
+        <div class="container-center">
+          <div class="card">
+            <div class="card-body">
+              <h3>Open Folder</h3>
+              <p>Open Folder default value(will be making open new window)</p>
+              <code>code .</code>
+              <p>
+                But, if you want intenttionally to open new window you can use
+                this
+              </p>
+              <code>code -n (project folder)</code>
+              <p>Open Folder inside vscode without making new window</p>
+              <code>code -r .</code>
+              <p>it's for opening project inside folder</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3>How to</h3>
+              <p>solved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Vuejs" class="tabcontent">
+        <h1>Vue js</h1>
+        <div class="range"></div>
+        <input class="keyword" placeholder="search keyword" />
+        <div class="range"></div>
+        <div class="card">
+          <div class="card-body">
+            <h3>Vue Terminal</h3>
+            <p>Create new project</p>
+            <code>vue create vue-app</code>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3>Install Bootstrap on Vue</h3>
+            <p>
+              If you want to change the display of the vue using bootstrap u can
+              use this
+            </p>
+            <code>npm install bootstrap jquery popper.js</code>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3>The difference Between Method and Computed</h3>
+            <p>
+              Method will be change the value everytime the state change while
+              computed will change when the value inside property changed
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3>Short Hand for Vue Custom Derrivative</h3>
+            <p>Shortcute using <b>V-bind</b> such as <b>v-bind:key</b></p>
+            <p>Example:</p>
+            <code>:key</code>
+            <div class="range"></div>
+            <p>Shortcute using <b>v-on</b> such as <b>v-on:submit</b></p>
+            <p>Example:</p>
+            <code>@submit, @keydown</code>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3>V-model</h3>
+            <p>V model is making u can change the value into state quickly</p>
+            <div class="center-text">
+              <img src="main/assets/v-model.gif" alt="" height="300px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="main/script.js"></script>
+</html>
