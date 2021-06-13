@@ -27,11 +27,6 @@ body::-webkit-scrollbar-thumb {
   background-color: #a5dee5;
 }
 
-main {
-  margin-left: 2rem;
-  padding: 1rem;
-}
-
 code {
   font: bold;
   padding: 10px;
@@ -176,6 +171,11 @@ tr:nth-child(even) {
 }
 
 @media only screen and (max-width: 600px) {
+  main {
+    margin-left: 2rem;
+    padding: 1rem;
+  }
+
   .navbar {
     bottom: 0;
     width: 100vw;
