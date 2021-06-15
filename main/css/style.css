@@ -5,6 +5,9 @@
   --text-secondary: #fff5eb;
   --bg-primary: #343a40;
   --bg-secondary: #343a40;
+  --sky-light-blue: #a5dee5;
+  --medium-light-blue: #16c7df;
+  --deep-light-blue: #1c91a0;
   --transition-speed: 600ms;
 }
 
@@ -27,6 +30,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #a5dee5;
 }
 
+a {
+  color: var(--deep-light-blue);
+  text-decoration: none;
+}
 code {
   font: bold;
   padding: 10px;
@@ -43,6 +50,17 @@ pre {
   padding: 20px 200px 0px 0px;
   background-color: #f3f3f3;
   font-size: 10px;
+}
+
+img {
+  overflow: auto;
+  cursor: grab;
+  width: 400px;
+}
+
+iframe{
+  width: 100%;
+  height: 500px;
 }
 
 table {
@@ -198,6 +216,11 @@ tr:nth-child(even) {
   main {
     margin-left: 5rem;
     padding: 1rem;
+  }
+
+  img:active {
+    cursor: grabbing;
+    width: 800px;
   }
 
   .navbar {

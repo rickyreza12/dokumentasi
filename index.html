@@ -440,7 +440,112 @@
         <div class="range"></div>
         <div class="container-center">
           <div class="card">
-            <div class="card-body"></div>
+            <div class="card-body">
+              <h3>Switching Node version</h3>
+            <p>
+              We can switc between node version using another tool which is
+              <b>Node Version Manager(NVM</b>
+            </p>
+            <h4>Installing NVM</h4>
+            <p>
+              There are some instruction using mac and linux but for windows we
+              can download exe file in this website
+              <a href="https://github.com/coreybutler/nvm-windows/releases"
+                >Install NVM On Windows</a
+              >
+
+              <br>
+              or you can read full documentation at 
+              <a href="https://github.com/nvm-sh/nvm">nvm github</a>
+              <br>
+              <br>
+              After installing the nvm you can list all the node version like example bellow
+              <br>
+              <br>
+              <div class="image-container"><img src="main/assets/images/nvm-ls-available.PNG" alt=""></div>
+              <br>
+              then u can select version u need and install that version using this command line
+              <br>
+              <code>
+                nvm install 14.17.x
+              </code>
+              <br>
+              <b>x</b> mean for the highest available version 
+            </p>
+            <p>
+              <h4>Switching Node using nvm</h4>
+              after long installation now we can use the nvm, please
+              type
+              <code>nvm ls </code>
+              then we can look at the installed node we had
+              <br>
+              <div class="image-container">
+                <img src="main/assets/images/nvm-ls.PNG" alt="">
+              </div>
+              <br>
+              select one of the version, i choose the latest one, wich mean <b>14.17.0 </b> so we can use
+              <br>
+              <code>nvm use 14.17.0</code>
+              <br>
+              we will get to confirmation to install using command prompt, then the node changed !!!
+            </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3>
+                Node JS Important command
+              </h3>
+              <p>
+                We can create a file using a gitbash. The command will be 
+                <code>touch (filename) {optional} (format)</code>
+                for example <code>touch trycode.js</code>
+                <br>
+                <br>
+                After we create the file, we can see it using inline text editor 
+                <b>vi</b>, this will be the command <code>vi (filename)</code> for example
+                <br>
+                <code>vi trycode.js</code>
+                <br>
+                <br>
+                To insert code on editor vi we can type i, and insert the code we want
+                after finishing the code we can write the code using command <b>esc</b> and <b>:w</b> for write and
+                <b>q</b> for quit. Also, we can check the inside of the file by using command line that is <code>cat (filename)</code> for example 
+                <code>cat trycode.js</code>
+                <hr>
+                Another important command for node js are presented by table bellow
+                <br>
+                <br>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Command</th>
+                      <th>Explanation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>.load</td>
+                      <td>to call file inside the node commands </td>
+                    </tr>
+                    <tr>
+                      <td>.save</td>
+                      <td>to save file inside the directory that are used using node command line</td>
+                    </tr>
+                    <tr>
+                      <td>.editor</td>
+                      <td>to write file inside the file that are created</td>
+                    </tr>
+                    <tr>
+                      <td>.global (with double tab)</td>
+                      <td>it will give use the default variable that can be used</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                before calling all command above u need to call node first in command line tools by type <code>node</code>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -671,8 +776,10 @@
           </div>
           <div class="card">
             <div class="card-body">
-              <h3>How to</h3>
-              <p>solved</p>
+              <h3>Change Terminal</h3>
+              <p>We can change the terminal by using a command <code>ctrl + p</code> and then goes to <b>Terminal: Select Default Profile</b></p>
+              <p>here is some tutorial how to use it</p>
+              <iframe src="https://www.youtube.com/embed/sIy0EKQegbk" frameborder="0"></iframe>
             </div>
           </div>
         </div>

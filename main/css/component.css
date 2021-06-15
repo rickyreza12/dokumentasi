@@ -13,6 +13,10 @@
   padding: 20px;
 }
 
+.image-container {
+  overflow: auto;
+}
+
 .keyword {
   padding: 20px;
   display: inline-block;
